@@ -37,6 +37,8 @@
 		<script src="./js/respond.js"></script>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<![endif]-->
+
+	<meta name="google-site-verification" content="Ds1UgnhOT59XVI29fTxf4rag6K8taCTwCBtGO3VRd1c" />
 	
 </head>
 
