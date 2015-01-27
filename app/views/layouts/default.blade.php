@@ -39,6 +39,10 @@
 	<![endif]-->
 
 	<meta name="google-site-verification" content="Ds1UgnhOT59XVI29fTxf4rag6K8taCTwCBtGO3VRd1c" />
+
+	<!-- Google Analytics Include Pageview -->
+	<?php include_once("analyticstracking.php") ?>
+	<!-- End Google Analytics End Pageview -->
 	
 </head>
 

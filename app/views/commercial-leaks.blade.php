@@ -2,10 +2,6 @@
 
 @section('content')	
 
-<!-- Google Analytics Include Pageview -->
-<?php include_once("analyticstracking.php") ?>
-<!-- End Google Analytics End Pageview -->
-
 <div id="banner-commercial" class="bg-blur">
 		
 	@include('layouts.partials._header')
