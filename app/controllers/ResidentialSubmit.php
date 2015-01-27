@@ -47,9 +47,32 @@ class ResidentialSubmit extends BaseController {
 		Mail::send('emails.index', $input, function($message) use ($input)
 		{
 			$message->to('info@maxsusinc.com', 'Luke Hendon')
-				->subject('New Residential Leak Landing Page Lead')
+				->subject('New Residential Leak Lead')
 				->from($input['email']);
 		});
+
+		?>
+
+		<!-- Google Code for New Lead Conversion Page -->
+		<script type="text/javascript">
+			/* <![CDATA[ */
+			var google_conversion_id = 964767381;
+			var google_conversion_language = "en";
+			var google_conversion_format = "3";
+			var google_conversion_color = "ffffff";
+			var google_conversion_label = "hIMJCKu-nFkQld2EzAM";
+			var google_remarketing_only = false;
+			/* ]]> */
+		</script>
+		<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+
+		<noscript>
+			<div style="display:inline;">
+				<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/964767381/?label=hIMJCKu-nFkQld2EzAM&amp;guid=ON&amp;script=0"/>
+			</div>
+		</noscript>
+
+		<?php
 
 		Flash::message('Your message was sent successfully.  Someone with Maxsus Inc. will reach out to you shortly!');
 

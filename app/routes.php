@@ -13,7 +13,7 @@
 
 Route::get('/', function()
 {
-	return View::make('residential-leaks');
+	return Redirect::to('/residential-leaks');
 });
 
 Route::get('/residential-leaks', function()
