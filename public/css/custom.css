@@ -1,0 +1,92 @@
+
+
+nav.navbar.navbar-inverse.navbar-fixed-top.scroll-fixed-navbar,
+nav.navbar.navbar-inverse.navbar-fixed-top div.container div.navigation.navbar-collapse.collapse.in {
+	background-image: url(../img/wood-black.png);
+}
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+    div.navigation.navbar-collapse.collapse.in, 	
+    nav.navbar.navbar-inverse.navbar-fixed-top { 
+    	background-image: url(../img/wood-black.png);
+    }
+
+    .nav > li.a {
+    	color: #FFF!important;
+    }
+    .nav > li:hover,
+    .nav > li:active {
+    	color: #c82702!important;
+    }
+}
+
+
+.nav {
+	padding-top: 20px;
+	font-size: 1.5em;
+	color: white;
+}
+
+@media (max-width: 767px) {
+
+	.logo-header {
+		padding-left: 40px;
+		height: 70px;
+		margin-top: 20px!important;
+		margin-bottom: 20px!important;
+	}
+
+	 div.row div.col-lg-6.col-md-6 div.features {
+	 	margin-left: 40px!important;
+	}
+}
+
+.logo-header { 
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: 0px;
+}
+
+div.form-group > a > i,
+div.form-group > a > h2 {
+	font-size:1.4em;
+	display: inline;
+	vertical-align: middle;
+}
+
+div.form-group {
+	text-align: center;
+}
+
+div.form-group > a > i {
+	color: #FFF;
+	font-size:2em;
+	font-weight:700;
+}
+
+.disclaimer {
+	margin: 3px;
+	font-size: 14px;
+	padding: 0px;
+	line-height: 14px;
+}
+
+@media (max-width: 450px) {
+div.form-group > a {
+	font-size: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	}
+}
+
+a.btn-default {
+	background-color: #008000;
+	color: white;
+}
+
+a.btn-default:hover {
+	background-color: #109010;
+	color: white;
+}
