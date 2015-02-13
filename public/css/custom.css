@@ -90,3 +90,14 @@ a.btn-default:hover {
 	background-color: #109010;
 	color: white;
 }
+
+textarea.form-control {
+	max-width: 100%;
+	min-height: 50px;
+	min-width: 10%;
+}
+
+div.alert.alert-danger {
+	padding: 5px;
+	margin-bottom: 10px;
+}

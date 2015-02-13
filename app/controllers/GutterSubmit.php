@@ -20,28 +20,26 @@ class GutterSubmit extends BaseController {
 		$input = Input::all();
 
 		$rules = [
-			'firstName' => 'required',
-			'lastName' => 'required',
-			'email' => 'required|email',
-			'phone' => 'required',
-			'street' => 'required',
-			'city' => 'required',
-			'state' => 'required',
-			'zip' => 'required'
+			'firstName' 		=> 'required',
+			'lastName' 			=> 'required',
+			'email' 			=> 'required|email',
+			'phone' 			=> 'required',
+			'street' 			=> 'required',
+			'city' 				=> 'required',
+			'state' 			=> 'required',
+			'zip' 				=> 'required'
 		];
 
 		$validator = Validator::make($input, $rules);
 
-		if ($validator->fails()) 
-		{
+		if ($validator->fails())  {
 			return Redirect::back()->withErrors($validator)->withInput();
 		}
 
-		Mail::send('emails.index', $input, function($message) use ($input)
-		{
-			$message->to('luke@elkdevelopment.com')
-				->subject('New Gutter Landing Page Lead')
-				->from($input['email']);
+		Mail::send('emails.index', $input, function($message) use ($input) {
+			$message	->to('luke@elkdevelopment.com')
+						->subject('New Gutter Landing Page Lead')
+						->from($input['email']);
 		});
 
 		Flash::message('Your message was sent successfully.  Someone with Maxsus Inc. will reach out to you shortly!');
