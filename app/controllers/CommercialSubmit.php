@@ -24,17 +24,16 @@ class CommercialSubmit extends BaseController {
 		}
 
 		Mail::send('emails.index', $input, function($message) use ($input) {
-			$message	->to('luke@elkdevelopment.com', 'Luke Markey')
+			$message	->to('luke@keystrokecreative.com', 'Luke Markey')
 						->subject('New Commercial Leak Lead')
 						->from($input['email']);
 		});
 
-		/*Mail::send('emails.index', $input, function($message) use ($input)
-		{
+		Mail::send('emails.index', $input, function($message) use ($input) {
 			$message	->to('luke@maxsusinc.com', 'Luke Hendon')
 						->subject('New Commercial Leak Lead')
 						->from($input['email']);
-		});*/
+		});
 
 		Flash::message('Your message was sent successfully.  Someone with Maxsus Inc. will reach out to you shortly!');
 
